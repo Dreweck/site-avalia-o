@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title> Alunos </title>
+</head>
+
+
+<body>
+
+
+<script>
+
+    var nome = prompt("Qual seu nome?");
+
+    var nota1 = prompt("Digite a primeira nota:");
+    n1 = parseFloat(nota1);
+
+    var nota2 = prompt("Digite a segunda nota:");
+    n2 = parseFloat(nota2);
+
+    var nota3 = prompt("Digite a terceira nota:");
+    n3 = parseFloat(nota3);
+
+    var nota4 = prompt("Digite a quarta nota:");
+    n4 = parseFloat(nota4);
+
+    var media = ( (n1+n2+n3+n4)/4 );
+    console.log(media)
+
+    //
+
+    if (media >= 7) {
+        alert(nome+ ",sua média é:" + media + " aprovado" );
+
+    } else {
+        alert(nome+ ",sua média é:" + media + " reprovado" );
+
+    }
+
+</script>
+
+    
+
+</body>
+
+
+</html>

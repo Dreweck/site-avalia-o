@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+</head>
+<body>
+
+<script>
+ 
+    var continuar = true;
+
+    while (continuar) {
+        var nome = prompt("Qual é o nome do aluno?");
+        var nota1 = parseFloat(prompt("Digite a primeira nota de " + nome + ":"));
+        var nota2 = parseFloat(prompt("Digite a segunda nota de " + nome + ":"));
+        var nota3 = parseFloat(prompt("Digite a terceira nota de " + nome + ":"));
+        var nota4 = parseFloat(prompt("Digite a quarta nota de " + nome + ":"));
+
+        var media = (nota1 + nota2 + nota3 + nota4) / 4;
+        console.log(media);
+
+        if (media >= 7) {
+            alert(nome + ", sua média é: " + media.toFixed(2) + ". Aprovado!");
+        } else {
+            alert(nome + ", sua média é: " + media.toFixed(2) + ". Reprovado.");
+        }
+
+        
+        var resposta = prompt("Deseja continuar inserindo notas? (S/N)").toUpperCase();
+        continuar = (resposta === 'S');
+
+
+        if (!continuar) {
+            alert("Certo, até mais.");
+        }
+
+    }
+</script>
+
+</body>
+</html>

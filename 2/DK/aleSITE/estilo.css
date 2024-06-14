@@ -1,0 +1,90 @@
+.corner-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f5f5f5;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+}
+
+img.carousel-img {
+    max-width: 60%;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50px;
+}
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.carousel-item img {
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* TESTES:
+
+
+/* Estilos personalizados para o carrossel da seção "Sobre" */
+#carouselExampleCaptions {
+    width: 100%;
+    max-width: 800px; /* Defina a largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+}
+
+#carouselExampleCaptions .carousel-inner {
+    max-height: 500px; /* Defina a altura máxima do carrossel */
+}
+
+#carouselExampleCaptions .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; /* Define a altura máxima para as imagens */
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> Nome de malaco: </h1>
+
+    <div>
+        <label for="mes"> Mes que nasceu (1 a 12): </label> 
+        <input type="number" id="mes">
+    </div>
+
+    <div>
+        <label for="dia"> Dia que nasceu (1 a 31): </label>
+        <input type="number" id="dia">
+    </div>
+
+    <div>
+        <button type="button" onclick="juntar()"> Juntar </button>
+    </div>
+
+    <div>
+        <p id="resultado"> Resultado:</p>
+    </div>
+
+    <script>
+  
+            var nome = ["bbzinho(a)", "gostozinho(a)", "Importancia", "Gayyato", "Malandrinho(a)", "Diabinho(a)", "Molekinho(a)", "Senhor/Senhorita", "Novinho(a)", "Bonekinho", "Jaguara", "Cachorro",]
+            var sobrenome = ["do passinho", "da massa", "das trincas", "do pop", "do crime", "da nike", "duh dolar", "duh beck", "duh chaminho", "das tezze", "da badala", "das adidas", "do rock", "da nett", "da perdição", "do poder", "da baixada", "do comercio", "do eletro", "da barca", "atitude", "toddy", "desejado(a)", "polemico(a)", 
+            "despintado(a)", "ostentação", "tank", "paradão", "3d", "360 ou hd", "hi-fi"]
+
+            function juntar()
+
+        {
+            var mes=document.getElementById("mes").value;
+            var dia=document.getElementById("dia").value;
+
+            var A=parseInt(nome);
+            var B=parseInt(sobrenome);
+
+
+            document.getElementById("resultado").innerText = "Seu nome de malaco é:" + nome[mes-1] + " " + sobrenome[dia-1];
+
+        }
+
+
+    </script>
+
+    
+</body>
+
+</html>
